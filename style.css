@@ -1,0 +1,645 @@
+body {
+    /* Add a background color or image */
+    background-color: white;
+    background-image: url('');
+
+    /* Customize the font, size, and color for text*/
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+
+    /* Adjust the padding and margins */
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0; 
+    padding-right: 0;
+    padding-bottom: 10px;
+
+    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10%;
+  
+    line-height: 1.6;
+    min-height: 100vh; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links*/
+h1 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #ebebeb;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color:  #000000;
+    text-transform: capitalize;
+}
+h2 {
+    font-size: 150%;
+    line-height: 1.5;
+    color: #444444;
+
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+h3 {
+    text-align: left;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+
+    font-family: Arial, sans-serif; 
+    text-align: left; 
+    list-style: none; 
+}
+a {
+    font-size: 100%; 
+    cursor: pointer; 
+    color: #002e7a;
+  
+    background-color: transparent;
+    border-bottom: 1px dotted #ccc;
+    p {
+      font-size: 90%; 
+      color: #0042aa;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*These functions are used to style the links at the end of the program:
+  - If the user clicked a link it becomes purple
+  - If the user hovers over a link it becomes :required 
+  - If the user presses on the link it turns green*/
+a:visited {
+    color: #5e30eb;
+}
+a:link {
+    color: #0042aa;
+   /* text-decoration: none;*/
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+a:active {
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+ol li {
+    display: inline-block;
+    margin: 0 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*The following function is the default styel for all the buttons in the program
+  - This functions puts a shadoe behind the button
+  - Turns the background color of the buttons blue
+  - Increase the size of the button*/
+button {
+    background-color:  #008CBA;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+/* Styling for button at different states
+  - If the user hovers over the button, it bcome lgith blue*/
+button:hover {
+    background-color: #00a3d7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*The following 2 functions are to styel the button on the menu .navbar
+  - It is going to decrease the size of the button
+  - Change the background color of the button from blue to grey
+  - Turns the button black/gray if user hovers over it*/
+#theme-button {
+    background-color: transparent; 
+    text-decoration: none;
+    color: black; 
+    box-shadow: 2px 2px 5px rgb(255, 255, 255, 0.2);
+    font-size: 14px; 
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for the hovered state of the button */
+#theme-button:hover {
+    font-weight: bold;
+    background-color: #ebebeb;
+    color: black; 
+}
+
+/*The folowing function is responsible for dealing with the dark mode of the website
+  - Changes the color of each sub section in the program to eihter black white or blue*/
+.dark-mode {
+  background-color: black; /* Set background color to black */
+  color: white;
+
+/*Change the color all the text to white and make background color dark*/
+  h2,h3,p{
+    background-color: dark;
+    color: white;
+  }
+
+  h1{
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
+    color: white;
+}
+
+  
+/*Change the color  of the 2 buttons to dark blue*/
+  button{
+    color: white;
+    background-color: darkblue;
+  }
+
+  
+/*Change the color  of the theme buttons to dark, and changest text to white*/
+  #theme-button {
+      color: white;
+  }
+  #reduce-motion-button {
+      color: white;
+  }
+
+
+/*Change the color of the navigation bar to dark, and changest text to white*/
+  .navbar ul {
+    background-color: black;
+    color: white;
+  }
+  .navbar ul li a {
+    background-color: black;
+    color: white;
+  }
+
+  
+/*Change the color  of the footer to dark, and changest text to white*/
+  .footer {
+    background-color: black;
+    color: white;
+  }
+  .footer a {
+    background-color: black;
+    color: white;
+  }
+}
+
+
+#reduce-motion-button {
+    background-color: transparent; 
+    text-decoration: none;
+    color: black; 
+    box-shadow: 2px 2px 5px rgb(255, 255, 255, 0.2);
+    font-size: 14px; 
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for the hovered state of the button */
+#reduce-motion-button:hover {
+    font-weight: bold;
+    background-color: #ebebeb;
+    color: black; 
+}
+
+
+
+
+
+/*Petition Containers*/
+.petition-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-para{
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  padding-right: 10px;
+}
+
+/*Change the color of the button, and style it*/
+.sign-now-button {
+  font-weight: bold;
+  background-color: #ebebeb;
+  color: black; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* These function is used to center all the contents in the website*/
+.content-container {
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center; 
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+/* Center the iframe */
+iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 315px;
+    margin: 0 auto; 
+}
+/* Style the header-container */
+.important {
+    background-color: SlateGray;
+    font-weight: bold;
+    color: LightSlateGray;
+}
+/* Style the header-container */
+#interesting {
+    background-color: SlateGray;
+    padding: 5px;
+
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header-container *:not(h1){
+    text-align: center;
+}
+
+/* Style for the h1 tag inside header-container */
+header-container h1 {
+    padding: 10px 20px; 
+    margin-top: 30px; /* Add margin to create space below the menu */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+/* Select and style elements by class name or ID */
+/* Example: This styles elements with class="header-container"*/
+.header-container {
+    /*text-align: center;*/
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    color: #fff;
+    padding: 0 20px
+}
+/* Example: This styles an element with an id="header-container-img" */
+/* ID selector called header-container-img */
+#header-container-img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* ID selector called header-container-left */
+.header-item:nth-of-type(1) {
+    float: left;
+    width: 50%;
+}
+/* ID selector called header-container-right */
+.header-item:nth-of-type(2) {
+    float: right;
+    text-align: left;
+    width: 50%;
+}
+
+/* Class selector called header-container-button */
+.header-container-button {
+    background-color: #008CBA;
+   /* border: none;*/
+    color: white;
+    font-size: 16px;
+    /*text-align: center;*/
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+   /*display: inline-block;*/
+    display: flex;
+    margin-top: 10px;
+    padding: 8px 15px;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*These functions are responsible for:
+  - Having 2 links at the footer in a grid
+  - Having the footer being fixed and not moving
+  - Having the screen be ontop of the footer, so footer is not hiding information 
+*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #ebebeb;
+    margin-left: auto;
+  /*
+    display: grid;
+    grid-template-columns: repeat(1, auto);*/
+}
+.footer a {
+    margin-bottom: 10px;
+    color: #000000; 
+    margin-left: 150px;
+    margin-right: 150px; 
+}
+.footer a:hover {
+    color: red; 
+    text-decoration: underline; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Part 1: Navbar */
+/* General style rule set for all items in ul */
+.navbar ul {
+    list-style: none;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    margin-bottom: 20px; 
+    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox */
+
+}
+/* Style rule set for individual li */
+.navbar ul li {
+    float: left;
+    float: left;
+    margin: 0 10px; 
+}
+/* Style rule set for individual li link */
+.navbar ul li a {
+    font-family: Arial;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    color: black; 
+    text-align: center;
+    padding: 10px; 
+}
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+    background-color: #ebebeb;
+}
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/* Part 2: Flexbox */
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+  background-color: #ffd700; 
+  color: #333333; 
+  padding: 20px;
+  border-radius: 5px; 
+}
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {
+  background-color: #87ceeb; 
+  color: #333333; 
+  padding: 20px; 
+  border-radius: 5px; 
+}
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+  background-color: #90ee90; 
+  color: #333333; 
+  padding: 20px;
+  border-radius: 5px;
+}
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*Styel dsiplay of an incorrect input for the Name, Hometown, and EMail*/
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+
+
+.revealable {
+  position: relative;
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+}
+
+#modal-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
